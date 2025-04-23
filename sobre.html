@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre - Call of Duty: Black Ops 6</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f0f0f0;
+      --text-color: #1a1a1a;
+      --accent-color: #c93;
+      --card-bg: #ffffff;
+    }
+
+    body.dark-mode {
+      --bg-color: #0f0f0f;
+      --text-color: #f5f5f5;
+      --card-bg: #1e1e1e;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background-color: var(--card-bg);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    .logo {
+      font-size: 28px;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .accessibility-buttons button {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      border: 1px solid var(--text-color);
+      padding: 6px 12px;
+      margin-left: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .hero {
+      background: url('https://images5.alphacoders.com/131/1313485.jpeg') center/cover no-repeat;
+      padding: 100px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #ddd;
+    }
+
+    .about-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: var(--card-bg);
+      border-left: 4px solid var(--accent-color);
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      line-height: 1.8;
+    }
+
+    .about-section p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    footer {
+      background-color: var(--card-bg);
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--text-color);
+    }
+
+    footer h2 {
+      color: var(--accent-color);
+      margin-bottom: 10px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fff;
+      color: #000;
+    }
+
+    button[type="submit"] {
+      background-color: var(--accent-color);
+      color: #000;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #ffa500;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Call of Duty: Black Ops 6</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+    <div class="accessibility-buttons">
+      <button id="increase-font">A+</button>
+      <button id="decrease-font">A-</button>
+      <button id="dark-mode-toggle">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Sobre Black Ops 6</h1>
+      <p>O próximo nível em combate tático, narrativas imersivas e ação intensa.</p>
+    </section>
+
+    <section class="about-section">
+      <p>
+        <strong>Call of Duty: Black Ops 6</strong> mergulha os jogadores em uma experiência de guerra moderna com missões altamente secretas e combate intenso. Situado em um cenário fictício de tensão geopolítica, o jogo traz uma campanha envolvente com escolhas narrativas que mudam o rumo da história.
+      </p>
+      <p>
+        O multiplayer foi completamente renovado, com novos mapas urbanos e armas futuristas que garantem mais profundidade e estratégia ao gameplay competitivo. Modos como Dominação, Mata-Mata em Equipe e Guerra Terrestre retornam com melhorias gráficas e sonoras impressionantes.
+      </p>
+      <p>
+        O clássico modo <strong>Zumbis</strong> também retorna, com uma nova história ambientada em instalações secretas e ameaças biológicas. Jogue com amigos, enfrente hordas e desvende os segredos por trás do experimento que saiu do controle.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <section class="contact">
+      <h2>Fale Conosco</h2>
+      <form action="mailto:suporte@callofduty.com" method="post" enctype="text/plain">
+        <input type="email" placeholder="Seu E-mail" required>
+        <textarea rows="4" placeholder="Digite sua mensagem..." required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+    <p>&copy; 2025 Call of Duty: Black Ops 6. Todos os direitos reservados à Activision.</p>
+  </footer>
+
+  <script>
+    const increaseBtn = document.getElementById('increase-font');
+    const decreaseBtn = document.getElementById('decrease-font');
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    let fontSize = 16;
+
+    increaseBtn.onclick = () => {
+      fontSize += 1;
+      document.body.style.fontSize = fontSize + 'px';
+    };
+
+    decreaseBtn.onclick = () => {
+      fontSize -= 1;
+      document.body.style.fontSize = fontSize + 'px';
+    };
+
+    darkModeToggle.onclick = () => {
+      document.body.classList.toggle('dark-mode');
+    };
+  </script>
+</body>
+</html>
